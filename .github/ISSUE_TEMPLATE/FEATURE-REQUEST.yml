@@ -65,3 +65,21 @@ body:
       placeholder: Any additional information that could assist...
     validations:
       required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: What are the acceptance criteria for this issue?
+      placeholder: Describe the conditions that must be met for this issue to be considered resolved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reviewers
+    attributes:
+      label: "Reviewers"
+      description: Who should review this issue?
+      placeholder: Mention the GitHub usernames of the people who should review this issue.
+    validations:
+      required: false
