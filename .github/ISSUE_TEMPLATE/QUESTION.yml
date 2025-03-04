@@ -1,12 +1,12 @@
 name: "❓ Questions"
 description: Submit a question related to the project.
-title: "❓ [QUESTION] - <title>"
+title: "[QUESTION] - <title>"
 labels: ["question"]
 body:
   - type: textarea
     id: question
     attributes:
-      label: "Question"
+      label: "❔ Question"
       description: Provide your question clearly and concisely.
       placeholder: "What is the expected deadline for task XYZ?"
     validations:

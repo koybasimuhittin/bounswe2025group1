@@ -1,12 +1,12 @@
 name: "📚 Documentation Improvement"
 description: Suggest improvements or report issues in the documentation.
-title: "📚 [DOCS] - <title>"
+title: "[DOCS] - <title>"
 labels: ["documentation"]
 body:
   - type: textarea
     id: description
     attributes:
-      label: "Description"
+      label: "📖 Description"
       description: Provide a clear and detailed description of the documentation issue or improvement suggestion.
       placeholder: Short and explicit description of the documentation issue...
     validations:
@@ -15,7 +15,7 @@ body:
   - type: input
     id: related_url
     attributes:
-      label: "Related Documentation URL"
+      label: "🔗 Related Documentation URL"
       description: Provide the URL of the documentation page that needs improvement, if applicable.
       placeholder: ex. https://example.com/docs/feature
     validations:

@@ -1,12 +1,12 @@
 name: "📅 Meeting"
 description: Schedule and document a team meeting.
-title: "📅 [MEETING] - <title>"
+title: "[MEETING] - <title>"
 labels: ["meeting"]
 body:
   - type: input
     id: date
     attributes:
-      label: "Date"
+      label: "📅 Date"
       description: Enter the date of the meeting.
       placeholder: "dd/mm/yyyy"
     validations:
@@ -15,7 +15,7 @@ body:
   - type: input
     id: time
     attributes:
-      label: "Time"
+      label: "⏰ Time"
       description: Enter the time of the meeting.
       placeholder: "e.g., 21:00"
     validations:
@@ -24,7 +24,7 @@ body:
   - type: input
     id: location
     attributes:
-      label: "Location"
+      label: "📍 Location"
       description: Specify where the meeting will take place (e.g., Google Meet link).
       placeholder: "e.g., https://meet.google.com/xyz"
     validations:
