@@ -1,0 +1,17 @@
+name: Restrict Direct Pushes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  prevent-direct-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if push is from a PR
+        run: |
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.actor }}" != "github-actions[bot]" ]]; then
+            echo "Direct pushes to main are not allowed. Please use a pull request."
+            exit 1
+          fi
